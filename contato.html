@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Contatos | Portfólio de Pedro Jaime</title>
+    <meta
+      name="description"
+      content="Entre em contato com Pedro Jaime por WhatsApp, GitHub, LinkedIn, Instagram ou pelo formulário de contato com validação."
+    />
+    <meta
+      name="keywords"
+      content="Pedro Jaime, contato, WhatsApp, LinkedIn, GitHub, Instagram, formulário"
+    />
+    <meta name="author" content="Pedro Jaime Carvalho Maia" />
+    <meta name="robots" content="index, follow" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./media-queries.css" />
+  </head>
+  <body>
+    <div class="principal">
+      <header>
+        <div>
+          <h1>Portfólio de Pedro Jaime</h1>
+        </div>
+        <nav class="navegacao">
+          <a class="botao" href="./index.html">Sobre</a>
+          <a class="botao" href="./formacao.html">Formações e Cursos</a>
+          <a class="botao" href="./profissional.html">Profissional</a>
+          <a class="botao" href="./profissional.html#projetos">Projetos</a>
+          <a class="botao ativo" href="./contato.html">Contatos</a>
+        </nav>
+      </header>
+
+      <main>
+        <section class="descricao">
+          <div id="contato">
+            <h2>Contatos</h2>
+            <ul class="contato">
+              <li>
+                <a target="_blank" rel="noopener" href="https://wa.me/+5588998057255"
+                  ><img
+                    class="wpp"
+                    src="https://img.icons8.com/?size=512&id=16713&format=png"
+                    alt="WhatsApp"
+                /></a>
+              </li>
+              <li>
+                <a target="_blank" rel="noopener" href="https://github.com/PedroJaime07"
+                  ><img
+                    class="github"
+                    src="https://icones.pro/wp-content/uploads/2021/06/icone-github-noir.png"
+                    alt="GitHub"
+                /></a>
+              </li>
+              <li>
+                <a
+                  target="_blank"
+                  rel="noopener"
+                  href="https://www.linkedin.com/in/pedro-jaime-carvalho-maia-072714356/"
+                  ><img
+                    class="linkedin"
+                    src="https://cdn-icons-png.flaticon.com/256/174/174857.png"
+                    alt="LinkedIn"
+                /></a>
+              </li>
+              <li>
+                <a target="_blank" rel="noopener" href="https://www.instagram.com/pedrojaimecm/"
+                  ><img
+                    src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png"
+                    alt="Instagram"
+                /></a>
+              </li>
+            </ul>
+          </div>
+        </section>
+      </main>
+
+      <div class="formulario">
+        <h2>Formulário de Contato</h2>
+        <form class="form-contato" novalidate>
+          <label for="nome">Nome</label>
+          <input type="text" id="nome" name="nome" />
+          <span class="erro" id="erro-nome"></span>
+
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" />
+          <span class="erro" id="erro-email"></span>
+
+          <label for="mensagem">Mensagem</label>
+          <textarea id="mensagem" name="mensagem" rows="5"></textarea>
+          <span class="erro" id="erro-mensagem"></span>
+
+          <button type="submit">Enviar</button>
+        </form>
+      </div>
+
+      <footer>
+        <p>&copy; 2026 Pedro Jaime. Todos os direitos reservados.</p>
+      </footer>
+    </div>
+
+    <a href="#" class="btn-topo" title="Voltar ao início">⬆</a>
+
+    <script src="./script.js"></script>
+  </body>
+</html>

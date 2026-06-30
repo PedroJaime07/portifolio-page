@@ -154,6 +154,10 @@ img {
   }
 }
 
+.botao.ativo {
+  background-color: #3c4e75;
+}
+
 .btn-topo {
   position: fixed;
   bottom: 30px;
@@ -167,12 +171,41 @@ img {
   text-decoration: none;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
   z-index: 1000;
-  transition: background-color 0.3s ease, transform 0.3s ease;
+  opacity: 0;
+  pointer-events: none;
+  transition: background-color 0.3s ease, transform 0.3s ease, opacity 0.3s ease;
+}
+
+.btn-topo.visivel {
+  opacity: 1;
+  pointer-events: auto;
 }
 
 .btn-topo:hover {
   background-color: #3c4e75;
   transform: scale(1.1);
+}
+
+.revelar {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.revelar.visivel {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.erro {
+  color: #c0392b;
+  font-size: 14px;
+  min-height: 16px;
+}
+
+.form-contato input.invalido,
+.form-contato textarea.invalido {
+  border-color: #c0392b;
 }
 
 .formulario {
@@ -191,7 +224,7 @@ img {
   border-radius: 12px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   width: 400px;
-  height: 350px;
+  min-height: 350px;
   margin: 30px;
 }
 
